@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from animapp.views import rendervista,rendervista2,rendervista3,rendervista4,rendervista5
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',rendervista),
+    path('o/',rendervista2),
+    path('gato/',rendervista3),
+    path('perro/',rendervista4),
+    path('leon/',rendervista5),
+
 ]
